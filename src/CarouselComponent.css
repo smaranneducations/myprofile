@@ -1,0 +1,9 @@
+.carousel .slide img {
+    border-radius: 8px;
+  }
+  
+  .carousel .control-arrow,
+  .carousel .carousel-status {
+    display: none;
+  }
+  
