@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import './App.css';
 import Home from './Home';
+import MovingCar from './MovingCar';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Header />
       <Home />
       <Footer />
+      <MovingCar />
+
     </div>
   );
 }

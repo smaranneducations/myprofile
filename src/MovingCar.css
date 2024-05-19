@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes drive {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 110%;
+  }
+}
+
+.car-container {
+  @apply fixed bottom-0 left-0 w-full overflow-hidden; /* Changed to bottom-0 */
+}
+
+.car {
+  height: 5vh;
+  opacity: 0.5;
+  @apply relative;
+  animation: drive 100s linear infinite;
+}

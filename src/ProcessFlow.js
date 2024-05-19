@@ -12,7 +12,7 @@ const ProcessFlow = () => {
   const stepWidthPercentage = `calc((100% - ${(numberOfSteps - 1) * margin * 2}px - ${containerPadding}px) / ${numberOfSteps})`;
 
   return (
-    <div className="relative w-[55vw] h-[10vh] bg-blue-500 mx-auto flex items-center px-4 ">
+    <div className="relative w-[55vw] h-[10vh] bg-blue-300 mx-auto flex items-center px-4 ">
       {steps.map((step, index) => (
         <div key={index} className="h-full" style={{ width: stepWidthPercentage, margin: `0 ${margin}px` }}>
           <StepBox step={step} />

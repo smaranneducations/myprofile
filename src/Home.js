@@ -27,39 +27,39 @@ const handleItemClick = (item) => {
 
 const Home = () => {
     return (
-        <div className="flex h-screen">
+        <div className="flex w-[100vw] h-[80vh] bg-white-300">
             {/* Left Spacer */}
-            <div className="w-[0.5vw] bg-gray-200"></div>
+            <div className="w-[.5vw] bg-white-300"></div>
             
             {/* First Column */}
-            <div className="w-[38vw] h-full bg-green-300 flex flex-col justify-between">
-                <div className="h-[.5vh]">
-                    {/* Empty space */}
+            <div className="w-[38vw]  bg-white-300 flex flex-col justify-between overflow-hidden">
+                <div className="h-[.5vh] bg-white-200">
+                    <p>abc</p>
                 </div>
-                <div className=" h-[15vh] flex items-center justify-center">
+                {<div className=" h-[30vh] flex items-center justify-cneter overflow-hidden">
                     <UserProfile />
+                </div>}
+                <div className="h-[.5vh] bg-white">
+                <p></p>
                 </div>
-                <div className="h-[.5vh]">
-                    {/* Empty space */}
-                </div>
-                <div className="flex-grow h-[63vh]  flex items-center justify-center">
+                <div className="flex-grow h-[50vh] bg-blue-300 flex items-center justify-center">
                     <CarouselComponent items={CarouselComponentItems} onItemClick={handleItemClick} />
                 </div>
-                <div className="h-[.5vh]">
+                <div className="h-[.5vh] bg-white-300">
                     {/* Empty space */}
                 </div>
             </div>
             
             {/* Center Spacer */}
-            <div className="w-[0.5vw] bg-gray-200"></div>
+            <div className="w-[0.5vw] bg-white-300"></div>
             
             {/* Second Column */}
-            <div className="w-[61vw] h-full flex flex-col">
+            <div className="w-[61vw] h-[70vh] flex flex-col overflow-hidden">
                 <div className="h-[.5vh]">
                     {/* Empty space */}
                 </div>
                 {/* First Row */}
-                <div className="h-[15vh] bg-blue-300 flex items-center justify-center">
+                <div className="h-[30vh] bg-gray-200 flex items-center justify-center">
                     <ProcessFlow />
                 </div>
                 

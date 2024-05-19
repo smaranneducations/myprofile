@@ -1,9 +1,18 @@
-.carousel .slide img {
-    border-radius: 8px;
-  }
-  
-  .carousel .control-arrow,
-  .carousel .carousel-status {
-    display: none;
-  }
-  
+.carousel .carousel-slider {
+  height: 100% !important;
+}
+
+.carousel .slider-wrapper {
+  height: 100% !important;
+}
+
+.carousel .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bg-opacity-70 {
+  background-color: rgba(209, 213, 219, 0.7); /* Tailwind CSS bg-gray-300 with 70% opacity */
+}

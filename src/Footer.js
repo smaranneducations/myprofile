@@ -16,8 +16,8 @@ const Footer = () => {
             <span className="text-center transform -rotate-45" style={{ fontSize: 'calc(2vh)', height: '5vh' }}>
               {step}
             </span>
-            <div className="flex items-center justify-center border-4 border-blue-300 rounded-full vibrate" style={{ width: '5vh', height: '5vh' }}>
-              <div className="border-4 border-blue-300 rounded-full" style={{ width: '3vh', height: '3vh' }}></div>
+            <div className="flex items-center justify-center border-4 border-green-300 rounded-full vibrate" style={{ width: '5vh', height: '5vh' }}>
+              <div className="border-4 border-green-400 rounded-full" style={{ width: '3vh', height: '3vh' }}></div>
             </div>
           </div>
         ))}

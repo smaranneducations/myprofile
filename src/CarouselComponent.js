@@ -5,7 +5,7 @@ import './CarouselComponent.css'; // Custom styles if needed
 
 const CarouselComponent = ({ items, onItemClick }) => {
   return (
-    <div className="w-[98%] h-[40vh] mx-auto bg-gray-200">
+    <div className="w-full h-full mx-auto bg-gray-200">
       <Carousel
         showArrows
         autoPlay
@@ -19,16 +19,17 @@ const CarouselComponent = ({ items, onItemClick }) => {
             key={index}
             className="relative cursor-pointer"
             onClick={() => onItemClick(item)}
-            style={{ width: '100%', height: '40vh' }} // Ensure each item takes the full size of the parent container
+            style={{ width: '100%', height: '50vh'}} // Ensure each item takes the full height of the viewport
           >
-            <img 
-              src={item.image} 
-              alt={item.text} 
-              className="object-cover w-full h-full" 
-              style={{ maxWidth: '100%', maxHeight: '100%' }} // Maintain aspect ratio
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center py-2">
-              <p className="text-lg font-bold" style={{ fontFamily: 'Arial, sans-serif' }}>{item.text}</p>
+            <div className="w-full h-[100%] bg-blue-900">
+              <img 
+                src={item.image} 
+                alt={item.text} 
+                className="w-full h-[100%] object-cover" 
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-[30%] w-full bg-gray-300 bg-opacity-70 text-black text-center flex items-start justify-left p-4">
+                <p className="text-lg font-bold" style={{ fontFamily: 'Arial, sans-serif' }}>{item.text}</p>
+              </div>
             </div>
           </div>
         ))}
