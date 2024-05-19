@@ -10,7 +10,7 @@ const UserProfile = () => {
         <img
           src={mypic}
           alt="Profile"
-          className="w-[90%] h-auto border rounded-full dark:bg-gray-500 dark:border-gray-300"
+          className="w-[70%] h-auto border rounded-full dark:bg-gray-500 dark:border-gray-300"
         />
         <div className="flex space-x-4 mt-2">
           <a href="https://github.com/smaranneducations" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-800 hover:text-violet-600">

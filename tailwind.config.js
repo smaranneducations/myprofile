@@ -4,9 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {   fontFamily: {
-      'calligraphy': ['"Dancing Script"', 'cursive'],
-    },},
+    extend: {
+      fontFamily: {
+        'calligraphy': ['"Dancing Script"', 'cursive'],
+        'helvetica': ['Helvetica', 'Arial', 'sans-serif'], // Add Helvetica here
+      },
+    },
   },
   plugins: [],
 }

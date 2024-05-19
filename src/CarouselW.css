@@ -1,0 +1,25 @@
+.pattern-bg {
+  background: repeating-linear-gradient(
+    45deg,
+    #6a6a6d,
+    #c5cbf5 10px,
+    #4d4d4e 10px,
+    #c0c9f9 20px
+  );
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-grey {
+  color: rgb(18, 17, 17); /* Set text color to grey */
+}
+
+.font-normal {
+  font-weight: normal; /* Set font weight to normal */
+}
+
+.text-3xl {
+  font-size: .8rem;
+}
